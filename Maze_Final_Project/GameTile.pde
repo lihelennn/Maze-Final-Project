@@ -1,6 +1,15 @@
-public class GameTile{
-  boolean solved;
-  int puzzle;
-  Item i;  
+public class GameTile {
+  boolean battle;
+
+  public GameTile(boolean b) {
+    battle = b;
+  }
+
+  public boolean hasBattle(){
+      return battle;
+  }
   
-   public GameTile(
+  public void wonBattle(){
+      battle = false;
+}
+
