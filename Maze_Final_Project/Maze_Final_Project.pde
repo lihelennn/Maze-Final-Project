@@ -9,7 +9,7 @@ void setup() {
   r = new Random();
   int filenumber = r.nextInt(3);
   //use random to determine which game file to use
-  Scanner scan = new Scanner(new File("Test Maze"));
+  Scanner scan = new Scanner(new File("TestMaze.txt"));
   map = new GameTile[scan.nextInt()][scan.nextInt()];
   int startx = scan.nextInt();
   int starty = scan.nextInt();
