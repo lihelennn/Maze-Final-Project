@@ -27,5 +27,37 @@ public class GameTile {
   //checks if valid
   public boolean ValidClick(char d){
       if(d == 'N'){
-          if(direction == 'T' || direction == 'B' //any that has N){
+          if(direction == 'T' || direction == 'B' ||
+             direction == 'C' || direction == 'K' ||
+             direction == 'Y' || direction == 'U' ||
+             direction == 'A'){
+               return true;
+             }
+      }
+      if(d == 'S'){
+          if(direction == 'T' || direction == 'D' ||
+             direction == 'L' || direction == 'K' ||
+             direction == 'Y' || direction == 'P' ||
+             direction == 'A'){
+               return true;
+             }
+      }
+      if(d == 'E'){
+          if(direction == 'F' || direction == 'B' ||
+             direction == 'D' || direction == 'Y' ||
+             direction == 'P' || direction == 'U' ||
+             direction == 'A'){
+               return true;
+             }
+      }
+      if(d == 'W'){
+          if(direction == 'F' || direction == 'C' ||
+             direction == 'L' || direction == 'K' ||
+             direction == 'P' || direction == 'U' ||
+             direction == 'A'){
+               return true;
+             }
+      }
+      return false;
+  }
 
