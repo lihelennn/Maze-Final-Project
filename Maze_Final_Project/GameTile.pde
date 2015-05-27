@@ -60,5 +60,24 @@ public class GameTile {
       }
       return false;
   }
+  
+  void keyPressed(){
+    println(keyCode);
+    if (keyCode==119 && ValidClick('N')){
+      //go north
+    }else{
+      if (keyCode==97 && ValidClick('W')){
+        //go west
+      }else{
+        if (keyCode==100 && ValidClick('E')){
+          //go east
+        }else{
+          if (keyCode==115 && ValidClick('S')){
+            //go south
+          }
+        }
+      }
+    }
+  }
 
 }
