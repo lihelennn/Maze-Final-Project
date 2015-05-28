@@ -61,6 +61,7 @@ public class GameTile {
       return false;
   }
   
+  /*
   void keyPressed(){
     println(keyCode);
     if (keyCode==119 && ValidClick('N')){
@@ -79,5 +80,6 @@ public class GameTile {
       }
     }
   }
+  */
 
 }

@@ -14,7 +14,7 @@ void setup() {
     map = new GameTile[scan.nextInt()][scan.nextInt()];
     int startx = scan.nextInt();
     int starty = scan.nextInt();
-    for (scan.hasNext ()) {
+    for(int i=0; i<map.length; i++){
       String sub = scan.next();
       for (int ii=0; ii<map[0].length; ii++) {
         map[i][ii]= new GameTile(sub.charAt(ii), false);
