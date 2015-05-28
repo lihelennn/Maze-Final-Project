@@ -3,9 +3,11 @@ import java.io.*;
 
 Random r;
 GameTile[][] map;
+int mode = 0;
 
 void setup() {
   size(1000, 700);
+  background(0);
   r = new Random();
   int filenumber = r.nextInt(3);
   //use random to determine which game file to use
@@ -23,5 +25,15 @@ void setup() {
   }
   catch(FileNotFoundException e) {
   }
+}
+
+void displayMap(){
+  fill (150,150,150,80);
+  rect(100,100, width-200, height-200);
+}
+
+void draw(){
+  displayMap();
+  PuzzleTileGame t = new PuzzleTileGame();
 }
 
