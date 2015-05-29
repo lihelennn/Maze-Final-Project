@@ -1,4 +1,4 @@
-//import java.util.*;
+import java.util.*;
 
 
 PImage img;
@@ -58,6 +58,11 @@ void splitUp(int pieces) {
   }
   println(pix);
 }
+
+void mousePressed(){
+  if (pix.find(mouseX + tileWidth)){
+  }
+} 
 
 
 
