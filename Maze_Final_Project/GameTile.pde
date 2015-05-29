@@ -13,6 +13,26 @@ U: NWE
 A: NESW
 */
 
+PImage blank = loadImage("Blank.png");
+PImage border = loadImage("Border.png");
+PImage East = loadImage("East.png");
+PImage ESW = loadImage("ESW.png");
+PImage EW = loadImage("EW.png");
+PImage InsideMazeNESW = loadImage("Inside Maze NESW.png");
+PImage NE = loadImage("NE.png");
+PImage NES = loadImage("NES.png");
+PImage NESW = loadImage("NESW.png");
+PImage NEW = loadImage("NEW.png");
+PImage North = loadImage("North.png");
+PImage NS = loadImage("NS.png");
+PImage NSW = loadImage("NSW.png");
+PImage NW = loadImage("NW.png");
+PImage SE = loadImage("SE.png");
+PImage South = loadImage("South.png");
+PImage SW = loadImage("SW.png");
+PImage West = loadImage("West.png");
+
+
 public class GameTile {
   char direction;
   boolean door;

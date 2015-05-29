@@ -5,6 +5,8 @@ Random r;
 GameTile[][] map;
 int mode = 0;
 
+
+
 void setup() {
   size(1000, 700);
   background(0);
@@ -16,7 +18,7 @@ void setup() {
     map = new GameTile[scan.nextInt()][scan.nextInt()];
     int startx = scan.nextInt();
     int starty = scan.nextInt();
-    for(int i=0; i<map.length; i++){
+    for (int i=0; i<map.length; i++) {
       String sub = scan.next();
       for (int ii=0; ii<map[0].length; ii++) {
         map[i][ii]= new GameTile(sub.charAt(ii), false);
@@ -27,13 +29,14 @@ void setup() {
   }
 }
 
-void displayMap(){
-  fill (150,150,150,80);
-  rect(100,100, width-200, height-200);
+void displayMap() {
+  fill (150, 150, 150, 80);
+  rect(100, 100, width-200, height-200);
 }
 
-void draw(){
+void draw() {
   displayMap();
-  PuzzleTileGame t = new PuzzleTileGame();
+  //image(West,200,200);
+  //  PuzzleTileGame t = new PuzzleTileGame();
 }
 

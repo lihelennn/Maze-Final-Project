@@ -1,6 +1,6 @@
 public class SpotTheDifference{
   PImage picture;
-  ClickCoordinates[]solutions;
+//  ClickCoordinates[]solutions;
   
   
   public SpotTheDifference(int i){
